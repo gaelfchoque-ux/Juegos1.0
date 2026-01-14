@@ -1,0 +1,109 @@
+<!DOCTYPE html><html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>EMUSTATION</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Orbitron', sans-serif;
+    }body {
+  background: radial-gradient(circle at top, #0f2027, #000);
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 40px 20px 20px;
+}
+
+header img {
+  width: 140px;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 0 15px #00f7ff);
+}
+
+header h1 {
+  font-size: 3.5rem;
+  letter-spacing: 4px;
+  color: #00f7ff;
+  text-shadow: 0 0 10px #00f7ff, 0 0 30px #0077ff;
+}
+
+/* CONTENEDOR OPCIONES */
+.menu {
+  margin-top: 80px; /* baja las opciones */
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 220px;
+  height: 140px;
+  background: linear-gradient(145deg, #111, #1a1a1a);
+  border: 2px solid #00f7ff;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 247, 255, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent, rgba(0,247,255,0.4), transparent);
+  transform: translateX(-100%);
+  transition: 0.4s;
+}
+
+.card:hover::before {
+  transform: translateX(100%);
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 0 30px #00f7ff;
+}
+
+.card a {
+  color: #fff;
+  text-decoration: none;
+  z-index: 1;
+}
+
+footer {
+  text-align: center;
+  margin-top: 100px;
+  opacity: 0.5;
+  font-size: 0.8rem;
+}
+
+  </style>
+</head>
+<body>  <header>
+    <!-- CAMBIA src POR TU LOGO -->
+    <img src="logo.png" alt="Logo Emustation">
+    <h1>EMUSTATION</h1>
+  </header>  <section class="menu">
+    <div class="card"><a href="#">Juegos</a></div>
+    <div class="card"><a href="#">Emuladores</a></div>
+    <div class="card"><a href="#">Descargas</a></div>
+    <div class="card"><a href="#">Créditos</a></div>
+  </section>  <footer>
+    <p>EMUSTATION © 2026</p>
+  </footer></body>
+</html>
